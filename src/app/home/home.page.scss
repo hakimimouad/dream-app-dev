@@ -31,8 +31,8 @@ img.wave {
   position: absolute;
   /* Déplacez l'image à 100px du haut et 50px du côté droit */
   top: 0; /* Ajustez si nécessaire */
-  left: 40%; /* Ajustez si nécessaire */
-  width: 47%;
+  left: 41%; /* Ajustez si nécessaire */
+  width: 55%;
   height: 100%;
   object-fit: cover; /* Ajustez la valeur si nécessaire */
   z-index: 1;
@@ -151,132 +151,132 @@ p{
 }
 
 .split-right-title{
-  position: relative;
-  top:13%;
-  left: 30%;
+  position: absolute;
+  top:15%;
+  left: 59%;
   color: black;
   font-weight: bold; 
 }
 
 .split-right-paragraph{
-  position: relative;
-  top:14%;
-  left: 30%;
+  position: absolute;
+  top:21%;
+  left: 59%;
   color: black;
   word-spacing: 3px;
   line-height: 1.5;
 }
 
 .page1-logo{
-  position: relative;
-  top:17%;
-  left: 30%;
+  position: absolute;
+  top:33%;
+  left: 59%;
   height: 50px;
   width: 50px;
 }
 
 .page2-logo{
-  position: relative;
-  top:17%;
-  left: 58%;
+  position: absolute;
+  top:33%;
+  left: 77%;
   height: 50px;
   width: 50px;
 }
 
 .page3-logo{
-  position: relative;
-  top:29%;
-  left: 18%;
+  position: absolute;
+  top:44%;
+  left: 59%;
   height: 50px;
   width: 50px;
 }
 
 .page4-logo{
-  position: relative;
-  top:29%;
-  left: 46%;
+  position: absolute;
+  top:44%;
+  left: 77%;
   height: 50px;
   width: 50px;
 }
 
 .page5-logo{
-  position: relative;
-  top:41%;
-  left: 6%;
+  position: absolute;
+  top:55%;
+  left: 59%;
   height: 50px;
   width: 50px;
 }
 
 .page6-logo{
-  position: relative;
-  top:41%;
-  left: 34%;
+  position: absolute;
+  top:55%;
+  left: 77%;
   height: 50px;
   width: 50px;
 }
 
 .page7-logo{
-  position: relative;
-  top:53%;
-  right: 5.5%;
+  position: absolute;
+  top:66%;
+  left: 59%;
   height: 50px;
   width: 50px;
 }
 
 .paragraphe-page1{
-  position: relative;
-  top:10.5%;
-  left: 38%;
+  position: absolute;
+  top:35%;
+  left: 63%;
   font-size: small;
 }
 
 .paragraphe-page2{
-  position: relative;
-  top:6%;
-  left: 72.5%;
+  position: absolute;
+  top:35%;
+  left: 81%;
   font-size: small;
 }
 
 .paragraphe-page3{
-  position: relative;
-  top:14.5%;
-  left: 38%;
+  position: absolute;
+  top:46%;
+  left: 63%;
   font-size: small;
 }
 
 .paragraphe-page4{
-  position: relative;
-  top:10.5%;
-  left: 72.5%;
+  position: absolute;
+  top:46%;
+  left: 81%;
   font-size: small;
 }
 
 .paragraphe-page5{
-  position: relative;
-  top:18%;
-  left: 38%;
+  position: absolute;
+  top:57%;
+  left: 63%;
   font-size: small;
 }
 
 .paragraphe-page6{
-  position: relative;
-  top:14%;
-  left: 72.5%;
+  position: absolute;
+  top:57%;
+  left: 81%;
   font-size: small;
 }
 
 .paragraphe-page7{
-  position: relative;
-  top:22%;
-  left: 38%;
+  position: absolute;
+  top:68%;
+  left: 63%;
   font-size: small;
 }
 
 .desktop-button{
-  position: relative;
-  top: 30%;
-  left: 54%;
-  width: 22%;
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  width: 10%;
   height: 5%;
   background-color: #80b1b7;
   border-radius: 10px;
@@ -316,7 +316,7 @@ p{
 
 .page1-logo-mobile{
   position: absolute;
-  top: 18%;
+  top: 19%;
   left: 3%;
   width: 70px;
   height: 70px;
@@ -324,7 +324,7 @@ p{
 
 .page2-logo-mobile{
   position: absolute;
-  top: 28%;
+  top: 29%;
   left: 3%;
   width: 70px;
   height: 70px;
@@ -332,15 +332,7 @@ p{
 
 .page3-logo-mobile{
   position: absolute;
-  top: 38%;
-  left: 3%;
-  width: 70px;
-  height: 70px;
-}
-
-.page4-logo-mobile{
-  position: absolute;
-  top: 48%;
+  top: 39%;
   left: 3%;
   width: 70px;
   height: 70px;
@@ -348,7 +340,15 @@ p{
 
 .page5-logo-mobile{
   position: absolute;
-  top: 58%;
+  top: 49%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page4-logo-mobile{
+  position: absolute;
+  top: 59%;
   left: 3%;
   width: 70px;
   height: 70px;
@@ -356,7 +356,7 @@ p{
 
 .page6-logo-mobile{
   position: absolute;
-  top: 68%;
+  top: 69%;
   left: 3%;
   width: 70px;
   height: 70px;
@@ -364,7 +364,7 @@ p{
 
 .page7-logo-mobile{
   position: absolute;
-  top: 78%;
+  top: 79%;
   left: 3%;
   width: 70px;
   height: 70px;
@@ -372,7 +372,7 @@ p{
 
 .mobile-button{
   position: absolute;
-  top: 91%;
+  top: 93%;
   left: 31%;
   width: 40%;
   height: 5%;
@@ -387,49 +387,49 @@ p{
 
 .paragraphe-page1-mobile{
   position: absolute;
-  top: 19.5%;
+  top: 21.5%;
   left: 25%;
   font-size: 15px;
 }
 
 .paragraphe-page2-mobile{
   position: absolute;
-  top: 29.5%;
+  top: 31.5%;
   left: 25%;
   font-size: 15px;
 }
 
 .paragraphe-page3-mobile{
   position: absolute;
-  top: 39.5%;
+  top: 41.5%;
   left: 25%;
   font-size: 15px;
 }
 
 .paragraphe-page4-mobile{
   position: absolute;
-  top: 49.5%;
+  top: 51.5%;
   left: 25%;
   font-size: 15px;
 }
 
 .paragraphe-page5-mobile{
   position: absolute;
-  top: 59.5%;
+  top: 61.5%;
   left: 25%;
   font-size: 15px;
 }
 
 .paragraphe-page6-mobile{
   position: absolute;
-  top: 69.5%;
+  top: 71.5%;
   left: 25%;
   font-size: 15px;
 }
 
 .paragraphe-page7-mobile{
   position: absolute;
-  top: 79.5%;
+  top: 81.5%;
   left: 25%;
   font-size: 15px;
 }
