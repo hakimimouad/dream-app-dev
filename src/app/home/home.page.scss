@@ -1,27 +1,435 @@
-#container {
-  text-align: center;
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
+.split-left {
+  flex: 0.7; /* Réduisez la largeur de la partie gauche */
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.split-right {
+  flex: 1; /* La partie droite utilise le reste de l'espace disponible */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.split-left {
+  background-color: #80b1b7; /* Couleur verte */
+}
+
+.split-right {
+  background-color: #ffffff; /* Couleur blanche */
+}
+
+img.wave {
+  /* Position absolue pour permettre le positionnement précis */
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  /* Déplacez l'image à 100px du haut et 50px du côté droit */
+  top: 0; /* Ajustez si nécessaire */
+  left: 40%; /* Ajustez si nécessaire */
+  width: 47%;
+  height: 100%;
+  object-fit: cover; /* Ajustez la valeur si nécessaire */
+  z-index: 1;
+  transform: scaleY(-1);
 }
 
-#container strong {
+.logo{
+  position :absolute;
+  top : 5%;
+  left: 8%;
+  width: 50px;
+  height: 50px;
+}
+
+.button{
+  position :absolute;
+  top : 3%;
+  right : 4%;
+  color: black;
+  width: 100px;
+  height: 100px;
+}
+ion-input {
+  background-color:transparent;  /* couleur de fond de split-left */
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+p{
+  color :black;
+  position: absolute;
+  top: 13%;
+  left: 3%;
+}
+
+.input1{
+  position: relative;
+  top:50%;
+  left: 17%; 
+  width: 85%;
+  font-size: 25px;
+}
+.ligneinput1{
+  position: relative;
+  top:50%;
+  left: 9.5%;
+  border: 0;
+  height: 2px; /* Ajustez la hauteur selon vos besoins */
+  background-color: white;
+  width: 85%;
+  font-weight: bold; /* Rend la ligne en gras */
+}
+.input2{
+  position: relative;
+  top:68%;
+  left: 17%;
+  width: 85%;
+  font-size: 25px;
+}
+.ligneinput2{
+  position: relative;
+  top:68%;
+  left: 9.5%;
+  border: 0;
+  height: 2px; /* Ajustez la hauteur selon vos besoins */
+  background-color: white;
+  width: 85%;
+  font-weight: bold; /* Rend la ligne en gras */
+}
+
+.beginning{
+  position: absolute;
+  top:20%;
+  left: 8%;
+  font-weight: bold; 
+}
+
+.split-left-paragraph{
+  position: absolute;
+  top:28%;
+  left: 8%;
+  color:#ffffff;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+.firstlastname{
+  position: absolute;
+  top:43%;
+  left: 8%;
   font-size: 20px;
-  line-height: 26px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.intention{
+  position: absolute;
+  top:63%;
+  left: 8%;
+  font-size: 20px;
 }
 
-#container a {
-  text-decoration: none;
+.split-left-intention-paragraph{
+  position: absolute;
+  top:70%;
+  left: 8%;
+  color: #95e5d9;
+  font-family: Arial;
+  font-size: smaller;
+  font-weight: 100;
+}
+
+.split-right-title{
+  position: relative;
+  top:13%;
+  left: 30%;
+  color: black;
+  font-weight: bold; 
+}
+
+.split-right-paragraph{
+  position: relative;
+  top:14%;
+  left: 30%;
+  color: black;
+  word-spacing: 3px;
+  line-height: 1.5;
+}
+
+.page1-logo{
+  position: relative;
+  top:17%;
+  left: 30%;
+  height: 50px;
+  width: 50px;
+}
+
+.page2-logo{
+  position: relative;
+  top:17%;
+  left: 58%;
+  height: 50px;
+  width: 50px;
+}
+
+.page3-logo{
+  position: relative;
+  top:29%;
+  left: 18%;
+  height: 50px;
+  width: 50px;
+}
+
+.page4-logo{
+  position: relative;
+  top:29%;
+  left: 46%;
+  height: 50px;
+  width: 50px;
+}
+
+.page5-logo{
+  position: relative;
+  top:41%;
+  left: 6%;
+  height: 50px;
+  width: 50px;
+}
+
+.page6-logo{
+  position: relative;
+  top:41%;
+  left: 34%;
+  height: 50px;
+  width: 50px;
+}
+
+.page7-logo{
+  position: relative;
+  top:53%;
+  right: 5.5%;
+  height: 50px;
+  width: 50px;
+}
+
+.paragraphe-page1{
+  position: relative;
+  top:10.5%;
+  left: 38%;
+  font-size: small;
+}
+
+.paragraphe-page2{
+  position: relative;
+  top:6%;
+  left: 72.5%;
+  font-size: small;
+}
+
+.paragraphe-page3{
+  position: relative;
+  top:14.5%;
+  left: 38%;
+  font-size: small;
+}
+
+.paragraphe-page4{
+  position: relative;
+  top:10.5%;
+  left: 72.5%;
+  font-size: small;
+}
+
+.paragraphe-page5{
+  position: relative;
+  top:18%;
+  left: 38%;
+  font-size: small;
+}
+
+.paragraphe-page6{
+  position: relative;
+  top:14%;
+  left: 72.5%;
+  font-size: small;
+}
+
+.paragraphe-page7{
+  position: relative;
+  top:22%;
+  left: 38%;
+  font-size: small;
+}
+
+.desktop-button{
+  position: relative;
+  top: 30%;
+  left: 54%;
+  width: 22%;
+  height: 5%;
+  background-color: #80b1b7;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+.mobile-only{
+  background-color: #ffffff;
+}
+
+.mobile-title{
+  color: black;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mobile-paragraph{
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  word-spacing: 3px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.page1-logo-mobile{
+  position: absolute;
+  top: 18%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page2-logo-mobile{
+  position: absolute;
+  top: 28%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page3-logo-mobile{
+  position: absolute;
+  top: 38%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page4-logo-mobile{
+  position: absolute;
+  top: 48%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page5-logo-mobile{
+  position: absolute;
+  top: 58%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page6-logo-mobile{
+  position: absolute;
+  top: 68%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.page7-logo-mobile{
+  position: absolute;
+  top: 78%;
+  left: 3%;
+  width: 70px;
+  height: 70px;
+}
+
+.mobile-button{
+  position: absolute;
+  top: 91%;
+  left: 31%;
+  width: 40%;
+  height: 5%;
+  background-color: #80b1b7;
+  color:#ffffff;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.paragraphe-page1-mobile{
+  position: absolute;
+  top: 19.5%;
+  left: 25%;
+  font-size: 15px;
+}
+
+.paragraphe-page2-mobile{
+  position: absolute;
+  top: 29.5%;
+  left: 25%;
+  font-size: 15px;
+}
+
+.paragraphe-page3-mobile{
+  position: absolute;
+  top: 39.5%;
+  left: 25%;
+  font-size: 15px;
+}
+
+.paragraphe-page4-mobile{
+  position: absolute;
+  top: 49.5%;
+  left: 25%;
+  font-size: 15px;
+}
+
+.paragraphe-page5-mobile{
+  position: absolute;
+  top: 59.5%;
+  left: 25%;
+  font-size: 15px;
+}
+
+.paragraphe-page6-mobile{
+  position: absolute;
+  top: 69.5%;
+  left: 25%;
+  font-size: 15px;
+}
+
+.paragraphe-page7-mobile{
+  position: absolute;
+  top: 79.5%;
+  left: 25%;
+  font-size: 15px;
 }

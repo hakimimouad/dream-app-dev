@@ -1,20 +1,107 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content" side="end">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
+<ion-content [fullscreen]="true" id="main-content">
+  <div class="split-container desktop-only">
+        <div class="split-left">
+          <img class="logo"
+          src="./../../assets/icon/Image_2.png"
+          alt="logo"/>  
+          <h1 class="beginning">Pour commencer...</h1>
+          <p class="split-left-paragraph">Faire votre Shynleï, jouer c'est l'occasion <br>
+          d'écouter vos rêves, de les partager et de prendre <br>
+        confiance de votre richesse.</p>
+        <h1 class="firstlastname">Nom et prénom :</h1>
+            <ion-input aria-label="Email" class="input1" id="input1" placeholder="Enter text"></ion-input>
+            <hr color="white" class="ligneinput1" width=80%>
+            <h1 class="intention">Mon intention :</h1>
+            <p class="split-left-intention-paragraph">L'intention, l'objectif de ce Shynleï</p>
+            <ion-input aria-label="Email" class="input2" id="input2" placeholder="Enter text"></ion-input>
+            <hr color="white" class="ligneinput2" width=80%>
+        </div>
+        <img class="wave"
+          src="./../../assets/wave-svg.svg"
+          alt="courbe"
+          height="100%"/>       
+        <div class="split-right">
+          <ion-buttons slot="start" class="button">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+            <h1 class="split-right-title">Votre Shynleï c'est..</h1>
+            <p class="split-right-paragraph">7 étapes, 2 fiches pour prendre note des rencontres, 1 page pour éclairer <br> 
+            le sens, 3 interprétations pour vous aider..</p>
+            <img class="page1-logo"
+            src="./../../assets/Page-1.svg"
+            alt="page1 logo"/>
+            <img class="page2-logo"
+            src="./../../assets/Page-2.svg"
+            alt="page2 logo"/>
+            <img class="page3-logo"
+            src="./../../assets/Page-3.svg"
+            alt="page3 logo"/>
+            <img class="page4-logo"
+            src="./../../assets/Page-5.svg"
+            alt="page4 logo"/>
+            <img class="page5-logo"
+            src="./../../assets/Page-4.svg"
+            alt="page5 logo"/>
+            <img class="page6-logo"
+            src="./../../assets/Page-6.svg"
+            alt="page6 logo"/>
+            <img class="page7-logo"
+            src="./../../assets/Page-7.svg"
+            alt="page7 logo"/>
+            <p class="paragraphe-page1">1. Le rêve liber l'expression</p>
+            <p class="paragraphe-page2">2. Le sens éclaire le parcours</p>
+            <p class="paragraphe-page3">3. La différence rend unique</p>
+            <p class="paragraphe-page4">4. La valeur humaine met en mouvement</p>
+            <p class="paragraphe-page5">5. La clé exprime le style</p>
+            <p class="paragraphe-page6">6. Le parcours associe rêve et réalité</p>
+            <p class="paragraphe-page7">7. Le ciel bleu révéle l'allignement</p>
+            <button class="desktop-button" onclick="checkIp()">EXPRIMER MES REVES></button>
+        </div> 
+    </div>    
+    <div class="split-container mobile-only">       
+      <div class="mobile">
+          <h1 class="mobile-title">Votre Shynleï</h1>
+          <p class="mobile-paragraph">7 étapes, 2 fiches pour prendre note des <br>rencontres, 1 page pour éclairer le sens, 3 intérprétations pour vous aider ..</p>
+          <img class="page1-logo-mobile"
+            src="./../../assets/Page-1.svg"
+            alt="page1 logo"/>
+            <img class="page2-logo-mobile"
+            src="./../../assets/Page-2.svg"
+            alt="page2 logo"/>
+            <img class="page3-logo-mobile"
+            src="./../../assets/Page-3.svg"
+            alt="page3 logo"/>
+            <img class="page4-logo-mobile"
+            src="./../../assets/Page-5.svg"
+            alt="page4 logo"/>
+            <img class="page5-logo-mobile"
+            src="./../../assets/Page-4.svg"
+            alt="page5 logo"/>
+            <img class="page6-logo-mobile"
+            src="./../../assets/Page-6.svg"
+            alt="page6 logo"/>
+            <img class="page7-logo-mobile"
+            src="./../../assets/Page-7.svg"
+            alt="page7 logo"/>
+            <p class="paragraphe-page1-mobile">1. Le rêve liber l'expression</p>
+            <p class="paragraphe-page2-mobile">2. Le sens éclaire le parcours</p>
+            <p class="paragraphe-page3-mobile">3. La différence rend unique</p>
+            <p class="paragraphe-page4-mobile">4. La valeur humaine met en mouvement</p>
+            <p class="paragraphe-page5-mobile">5. La clé exprime le style</p>
+            <p class="paragraphe-page6-mobile">6. Le parcours associe rêve et réalité</p>
+            <p class="paragraphe-page7-mobile">7. Le ciel bleu révéle l'allignement</p>
+            <button class="mobile-button" onclick="checkIpPhone()">EXPRIMER MES REVES></button>
+      </div>
+  </div>    
 </ion-content>
+
+
+  
