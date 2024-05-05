@@ -32,7 +32,7 @@ Ce mini-projet cible les développeurs front-end et les concepteurs d'interfaces
 
 ### Accéder à l'Application Hébergée
 
-L'application est hébergée sur Firebase Hosting à l'adresse suivante : fir-dream-inventiv.web.app
+L'application est hébergée sur Firebase Hosting à l'adresse suivante : http://fir-dream-inventiv.web.app.
 
 ### Exécuter Localement
 
